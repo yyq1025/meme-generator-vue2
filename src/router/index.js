@@ -1,27 +1,27 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import ResultsView from "../views/ResultsView.vue"
+import Vue from "vue";
+import VueRouter from "vue-router";
+import HomeView from "../views/HomeView.vue";
+import ResultsView from "../views/ResultsView.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: HomeView
   },
   {
     path: "/search",
     name: "search",
-    component: ResultsView,
-  },
-]
+    component: ResultsView
+  }
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes
-})
+});
 
-export default router
+export default router;

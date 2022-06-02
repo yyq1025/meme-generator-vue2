@@ -67,7 +67,7 @@ export default {
       this.photo = [];
       this.total = 0;
     },
-    
+
     fetchData() {
       this.busy = true;
       const url =
